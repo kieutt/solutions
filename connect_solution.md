@@ -264,15 +264,7 @@ int left = 0, right = weights.size() - 1;
 
 **Cải thiện**: Từ 30 lần kiểm tra xuống tối đa log(200000) ≈ 18 lần
 
-## 6. Phân tích solution gốc
-
-Nhìn lại 4 solution ban đầu:
-- **sol1.cpp, sol3.cpp**: Đã sử dụng tối ưu này ✓
-- **sol2.cpp, sol4.cpp**: Binary search trên [1, 10^9] → TLE ✗
-
-Solution tối ưu này được dựa trên **sol1.cpp** và **sol3.cpp** - chính là cách tiếp cận đúng đắn.
-
-## 7. Lưu ý implementation
+## 6. Lưu ý implementation
 
 1. **0-indexed vs 1-indexed**: Chuyển về 0-indexed cho dễ xử lý
 2. **Edge ID**: Dùng ID cạnh thay vì đỉnh cha trong Tarjan
