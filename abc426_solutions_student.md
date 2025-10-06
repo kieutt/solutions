@@ -1,5 +1,4 @@
 # Hướng dẫn giải chi tiết 4 bài ngày 06.10.2025
-## Dành cho học sinh THPT
 
 ---
 
