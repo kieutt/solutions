@@ -1,4 +1,5 @@
 # Gợi Ý
+**Code mẫu: https://ideone.com/9ZZAkr**
 
 ## Phân tích
 
