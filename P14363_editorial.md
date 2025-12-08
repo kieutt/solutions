@@ -42,6 +42,7 @@ Khi đó, một phép thay thế tại vị trí $p$ với cặp $(s_{i,1}, s_{i
 ### Kỹ thuật Hash
 
 Sử dụng **Polynomial Rolling Hash** với công thức: (xem chuyên đề ở đây https://github.com/kieutt/ChuyenDe/blob/main/Polynomial_Rolling_Hash_Tutorial.md)
+
 $$H(s) = s[0] \cdot B^{n-1} + s[1] \cdot B^{n-2} + \ldots + s[n-1]$$
 
 Để tính hash xâu con $s[l \ldots r]$ trong $O(1)$:
