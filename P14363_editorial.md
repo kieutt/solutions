@@ -1,4 +1,4 @@
-# Hướng dẫn giải: Thay thế xâu (P14363)
+# Hướng dẫn giải: Thay thế xâu
 
 ## 1. Phân tích bài toán
 
