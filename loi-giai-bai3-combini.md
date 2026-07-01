@@ -1,4 +1,4 @@
-# Lời giải Bài 3 — "Комбини" (Cửa hàng tiện lợi)
+# Lời giải Bài 3 — Phân chia cửa hàng
 
 > Đối tượng: học sinh lớp 10 đã biết **chặt nhị phân (binary search)** và đang học **kỹ thuật hình học cơ bản**.
 > Bài này dạy hai "chiêu" cực kỳ hữu dụng: **chặt nhị phân trên đáp số** và **phép xoay 45° đổi khoảng cách Manhattan thành Chebyshev**.
