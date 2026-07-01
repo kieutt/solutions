@@ -254,7 +254,7 @@ chặt nhị phân D nhỏ nhất với feasible(D) = true
 
 ---
 
-## 11. Mở rộng để học sinh suy nghĩ
+## 11. Mở rộng
 
 - Nếu chia thành **$k$ nhóm** ($k > 2$) thì sao? Bài toán phủ bằng $k$ hình vuông trở nên khó hơn nhiều (nói chung là NP-khó khi $k$ tuỳ ý).
 - Phép $|a|+|b| = \max(|a+b|,|a-b|)$ và phép xoay $(x+y, x-y)$ xuất hiện ở **rất nhiều** bài Manhattan: tìm cặp xa nhất, cây khung Manhattan, k-điểm gần nhất… Nắm chắc nó là một "vũ khí" mạnh.
