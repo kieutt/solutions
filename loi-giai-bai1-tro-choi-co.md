@@ -55,29 +55,28 @@ Nghĩa là: hai ô có $(i+j)$ cùng tính chẵn lẻ thì cùng màu; khác th
 
 ### 1.3. Chỉ có đúng **HAI** bảng hợp lệ về parity
 
-Toàn bộ parity của bảng bị quyết định **chỉ bởi parity của một ô duy nhất** — chẳng hạn ô $(0,0)$. Mà ô $(0,0)$ chỉ có 2 lựa chọn (chẵn hoặc lẻ), nên **chỉ tồn tại đúng 2 "mẫu" parity hợp lệ**:
+Toàn bộ parity của bảng bị quyết định **chỉ bởi parity của một ô duy nhất** — chẳng hạn ô $(0,0)$. Mà ô $(0,0)$ chỉ có 2 lựa chọn (chẵn hoặc lẻ), nên **chỉ tồn tại đúng 2 "mẫu" parity hợp lệ**.
 
-- **Mẫu A**: ô $(i,j)$ phải có parity $\,(i+j)\bmod 2\,$ (ô $(0,0)$ chẵn).
+**Mẫu A** — ô $(i,j)$ có parity $(i+j)\bmod 2$ (ô $(0,0)$ chẵn):
 
-  $$
-  \begin{matrix}
-  C & L & C & L \\
-  L & C & L & C \\
-  C & L & C & L
-  \end{matrix}
-  \qquad (C=\text{chẵn},\ L=\text{lẻ})
-  $$
+$$
+\begin{matrix}
+C & L & C & L \\
+L & C & L & C \\
+C & L & C & L
+\end{matrix}
+\qquad (C=\text{chẵn},\ L=\text{lẻ})
+$$
 
-- **Mẫu B**: ngược lại hoàn toàn, parity $\,(i+j+1)\bmod 2\,$ (ô $(0,0)$ lẻ).
+**Mẫu B** — ngược lại hoàn toàn, parity $(i+j+1)\bmod 2$ (ô $(0,0)$ lẻ):
 
-  $$
-  \begin{matrix}
-  L & C & L & C \\
-  C & L & C & L \\
-  L & C & L & C
-  \end{matrix}
-  $$
-
+$$
+\begin{matrix}
+L & C & L & C \\
+C & L & C & L \\
+L & C & L & C
+\end{matrix}
+$$
 > **Một câu hỏi tinh tế:** liệu có khi nào *không tô được* không (như đồ thị có chu trình lẻ thì không tô 2 màu được)? **Không.** Lưới ô vuông luôn "2 màu hoá" được theo $(i+j)\bmod 2$ — nói theo ngôn ngữ đồ thị, lưới là **đồ thị hai phía (bipartite)**, không có chu trình lẻ. Vì vậy cả hai mẫu A, B **luôn khả thi**. Đây là lý do bài không cần xét trường hợp "vô nghiệm".
 
 **Kết luận của mô hình:** bảng cuối cùng bắt buộc là một trong hai mẫu bàn cờ A hoặc B. Bài toán "vô số cách thêm cờ" đã thu lại còn **đúng 2 ứng viên**. Phần còn lại chỉ là *chọn cái nào* và *điền số bao nhiêu*.
@@ -308,7 +307,7 @@ Bảng ra:
 
 ---
 
-## 10. Thông điệp mang về
+## 10. Nhận xét
 
 Bài này không khó về kỹ thuật, mà khó ở **bước mô hình hoá**:
 
