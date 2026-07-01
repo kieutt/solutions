@@ -175,7 +175,7 @@ tính được từ $a \bmod P$ và $b \bmod P$ — nên cứ lấy dư sau mỗ
 
 ---
 
-## 8. Lỗi học sinh hay mắc
+## 8. Lỗi hay mắc
 
 - **Quên lấy dư khi đọc $a_{i,j}$** (vì $a_{i,j}$ có thể $= P$).
 - **Tràn số khi nhân.** Hai số cỡ $10^9$ nhân nhau cỡ $10^{18}$ → bắt buộc `long long`; nếu lỡ để `int` là sai ngầm.
