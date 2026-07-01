@@ -1,4 +1,4 @@
-# Lời giải Bài 1 — "Trò chơi cổ" (Древняя игра)
+# Lời giải Bài 1 — Trò chơi cổ xưa
 
 > Đối tượng: học sinh lớp 10 vừa học xong phần cơ bản, đang bước vào thuật toán nâng cao.
 > Mục tiêu: nghe xong là hiểu vì sao đúng và **tự code lại được ngay**.
