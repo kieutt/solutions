@@ -169,7 +169,7 @@ tính được từ $a \bmod P$ và $b \bmod P$ — nên cứ lấy dư sau mỗ
 
 ## 7. Trường hợp biên
 
-- **$n = 1$ (một cách nấu):** mọi tập 1 món có $k=1$, $\lfloor 1/2\rfloor = 0$, mà nguyên liệu của món đó được dùng 1 lần $> 0$ → **luôn vi phạm**. Đáp số $0$. Công thức tự cho: $\text{Total} = r_1$, và $\sum_j \text{Invalid}_j = \sum_j a_{1,j} = r_1$ → hiệu bằng $0$. ✓
+- **$n = 1$ (một cách nấu):** mọi tập 1 món có $k=1$, $\lfloor 1/2\rfloor = 0$, mà nguyên liệu của món đó được dùng 1 lần $> 0$ → **luôn vi phạm**. Đáp số $0$. Công thức tự cho: $Total = r_1$, và $\sum_j Invalid_j = \sum_j a_{1,j} = r_1$ → hiệu bằng $0$. ✓
 - **$a_{i,j} = P$:** lấy dư thành $0$ → ô đó đóng góp $0$ cách (đúng tinh thần đếm mô-đun).
 - **Tất cả $a_{i,j} = 0$:** $\text{Total}=0$ → đáp số $0$.
 
