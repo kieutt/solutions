@@ -122,9 +122,9 @@ $$
 
 ## 6. Trường hợp biên
 
-- **$n = 2$:** chỉ có đinh 1 và 2. Một sợi đi $1 \to 2$ (dài $\mathrm{dist}(1,2)$), sợi kia ở yên đinh 1 (dài 0). Đáp số $= \mathrm{dist}(1,2)$. Công thức tự cho ra điều này.
-- **Mọi đinh thẳng hàng ($y_i = 0$):** $\mathrm{dist} = |x_i - x_j|$. Cấu trúc lời giải **không đổi**, chỉ là khoảng cách đơn giản hơn (đây là subtask 4 — dùng để test nhanh).
-- **Toạ độ trùng nhau / nhiều đinh cùng vị trí:** khoảng cách $= 0$, vẫn xử lý đúng.
+- **$n = 2$:** chỉ có đỉnh 1 và 2. Một sợi đi $1 \to 2$ (dài $\mathrm{dist}(1,2)$), sợi kia ở yên tại đỉnh 1 (dài 0). Đáp số là $\mathrm{dist}(1,2)$. Công thức tự cho ra điều này.
+- **Mọi đỉnh thẳng hàng (tung độ bằng 0):** lúc này khoảng cách rút gọn thành $\mathrm{dist} = |x_i - x_j|$. Cấu trúc lời giải **không đổi**, chỉ là khoảng cách đơn giản hơn (đây là subtask 4 — dùng để test nhanh).
+- **Toạ độ trùng nhau / nhiều đỉnh cùng vị trí:** khoảng cách bằng 0, vẫn xử lý đúng.
 
 ---
 
