@@ -305,7 +305,7 @@ for cột j:
 
 ---
 
-## 12. Mở rộng để học sinh suy nghĩ
+## 12. Mở rộng
 
 - Quan sát "nhiều nhất một phần tử chiếm quá nửa" gắn liền với thuật toán **Boyer–Moore Majority Vote** (tìm phần tử đa số) — cùng một sự thật toán học, ứng dụng khác nhau.
 - Kỹ thuật **DP theo hiệu hai đại lượng** ($p - q$) và **đếm phần bù** xuất hiện thường xuyên trong các bài đếm có ràng buộc "không quá một nửa", "ngoặc hợp lệ", "đường đi không vượt đường chéo"… Nắm chắc cặp công cụ này.
