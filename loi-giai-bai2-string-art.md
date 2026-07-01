@@ -1,4 +1,4 @@
-# Lời giải Bài 2 — "Stринг-арт" (Nghệ thuật giăng chỉ)
+# Lời giải Bài 2 — Tranh sợi
 
 > Đối tượng: học sinh lớp 10 đã quen mảng, vòng lặp, và **mới bắt đầu học Quy hoạch động (DP)**.
 > Đây là một bài DP "kinh điển" rất đáng học, vì nó dạy ta cách **chọn trạng thái** — kỹ năng khó nhất khi mới học DP.
