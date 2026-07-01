@@ -71,19 +71,21 @@ Vì hai sợi là **như nhau** (đổi vai không ảnh hưởng), ta coi $dp[i
 **Khởi tạo:** $dp[1][1] = 0$ — cả hai cùng ở đinh 1, chưa đi đâu, phủ đúng đinh 1.
 
 ---
-
 ## 3. Công thức chuyển trạng thái (transition)
 
-Đặt $k = \max(i,j) + 1$ là đinh tiếp theo cần thêm. Nếu $k \le n$, có **đúng 2 cách** thêm đinh $k$ (một trong hai người vươn tới nó):
+Đặt $k = \max(i,j) + 1$ là đỉnh tiếp theo cần thêm. Nếu $k \le n$, có **đúng 2 cách** thêm đỉnh $k$ (một trong hai người vươn tới nó).
 
-- **Người đang ở $i$ đi tới $k$:** trạng thái mới $(k, j)$, chi phí cộng thêm $\mathrm{dist}(i, k)$:
-  $$
-  dp[k][j] \;\leftarrow\; \min\big(dp[k][j],\; dp[i][j] + \mathrm{dist}(i, k)\big).
-  $$
-- **Người đang ở $j$ đi tới $k$:** trạng thái mới $(i, k)$, chi phí cộng thêm $\mathrm{dist}(j, k)$:
-  $$
-  dp[i][k] \;\leftarrow\; \min\big(dp[i][k],\; dp[i][j] + \mathrm{dist}(j, k)\big).
-  $$
+**Cách 1 — người đang ở $i$ đi tới $k$:** trạng thái mới $(k, j)$, chi phí cộng thêm $\mathrm{dist}(i,k)$.
+
+$$
+dp[k][j] \;\leftarrow\; \min\big(dp[k][j],\; dp[i][j] + \mathrm{dist}(i,k)\big)
+$$
+
+**Cách 2 — người đang ở $j$ đi tới $k$:** trạng thái mới $(i, k)$, chi phí cộng thêm $\mathrm{dist}(j,k)$.
+
+$$
+dp[i][k] \;\leftarrow\; \min\big(dp[i][k],\; dp[i][j] + \mathrm{dist}(j,k)\big)
+$$
 
 Vì mỗi bước $\max$ tăng **đúng 1 đơn vị**, mọi phụ thuộc đều "hướng về phía trước" (từ $\max = m$ sang $\max = m+1$), **không có vòng lặp quẩn** → ta xử lý trạng thái theo thứ tự $\max(i,j)$ tăng dần là an toàn.
 
@@ -126,7 +128,7 @@ $$
 
 ---
 
-## 7. Lỗi học sinh hay mắc
+## 7. Lỗi hay mắc
 
 - **Tràn số khi tính khoảng cách.** $x_i$ tới $10^9$, hiệu tới $2\cdot10^9$, **bình phương** tới $4\cdot10^{18}$. Nếu để `int` thì tràn ngay. Phải tính hiệu bằng `long long`, bình phương bằng `long long` (tổng tới $8\cdot10^{18}$ vẫn lọt `long long` $\approx 9.2\cdot10^{18}$), **rồi mới** ép `double` để lấy `sqrt`.
 - **Quên cả hai sợi cùng bắt đầu ở đinh 1** → quên $dp[1][1]=0$ hoặc khởi tạo sai.
@@ -296,7 +298,7 @@ answer = min over j của dp[n][j]
 
 ---
 
-## 11. Mở rộng để học sinh suy nghĩ
+## 11. Mở rộng
 
 - Nếu có **$3$ sợi chỉ** thì sao? Trạng thái thành $dp[i][j][\ell]$ với $\max = $ một trong ba → $O(n^3)$. Tổng quát $t$ sợi → $O(n^t)$.
 - Đây là họ hàng của bài **"Bitonic tour"** (hành trình đi sang phải rồi quay về trái) — cùng ý tưởng "hai nhánh đi tiến". Tìm hiểu thêm để thấy một khuôn mẫu DP rất hay gặp.
