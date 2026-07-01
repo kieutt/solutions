@@ -1,4 +1,4 @@
-# Lời giải Bài 4 — "Японская кулинария" (Ẩm thực Nhật Bản)
+# Lời giải Bài 4 — Ẩm thực Nhật Bản
 
 > Đối tượng: học sinh lớp 10 đã quen **quy tắc nhân, quy tắc cộng** trong đếm và **DP cơ bản**, đang làm quen **số học mô-đun**.
 > Đây là bài khó nhất trong bộ: kết hợp **mô hình hoá bài đếm**, **đếm phần bù**, **một quan sát "đa số"** rất đẹp, và **DP đếm theo độ lệch**. Hãy đọc chậm.
