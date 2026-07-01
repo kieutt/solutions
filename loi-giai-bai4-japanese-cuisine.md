@@ -152,7 +152,7 @@ tính được từ $a \bmod P$ và $b \bmod P$ — nên cứ lấy dư sau mỗ
 
 1. Đọc lưới, lấy dư mọi $a_{i,j}$. Tính $r_i = \sum_j a_{i,j} \bmod P$ cho từng hàng.
 2. $\text{Total} = \big(\prod_i (1 + r_i) - 1\big) \bmod P$.
-3. Với **mỗi cột** $j = 1..m$: chạy DP độ lệch (mục 3) để tính $\text{Invalid}_j = \sum_{d>0} dp[d]$.
+3. Với **mỗi cột** $j = 1..m$: chạy DP độ lệch (mục 3) để tính $Invalid_j = \sum_{d>0} dp[d]$.
 4. Đáp số $= \big(\text{Total} - \sum_j \text{Invalid}_j\big) \bmod P$ (nhớ cộng $P$ trước khi lấy dư để tránh âm).
 
 ---
